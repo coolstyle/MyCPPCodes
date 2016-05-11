@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <cmath>
+
+using namespace std;
+struct personInfo{
+	string name;
+	int age;
+	char gender[5];
+};
+int _tmain(int argc, _TCHAR* argv[])
+{
+	personInfo man;
+	cout<<"enter your information"<<endl;
+	cin>>man.name>>man.age>>man.gender;
+
+	ofstream fileout("D:\\personinfo\\personalinfo.txt");
+	fileout<<"your name is   "<<man.name<<endl;
+	fileout<<"your age  is   "<<man.age<<endl;
+	fileout<<"your gender is "<<man.gender<<endl;
+
+	stringstream str;
+	
+	string num="345";
+	int tmp;
+	str<<num;
+	str>>tmp;
+	cout<<tmp+1<<endl;
+
+	int num=123;															
+	string str_num;
+	str<<num;
+	str>>str_num;
+	cout<<str_num<<endl;
+
+	ifstream info("D:\\personinfo\\number.txt");
+	double sq=0;
+	int sum=0;
+    
+	string line;
+	while (getline(info,line))
+	{
+		stringstream sstr;
+		int tmp;
+		cout<<line<<endl;
+		sstr<<line;
+		sstr>>tmp;
+		sum+=tmp;	
+	}
+	cout<<sum<<endl;
