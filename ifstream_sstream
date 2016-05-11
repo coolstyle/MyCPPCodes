@@ -1,0 +1,40 @@
+	#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <cmath>
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	ifstream namefile("D:\\personinfo\\number.txt");
+	string line;
+	string name_max_age;
+	string max__num;
+	string cur_name;
+	int max_age_num=-1;
+	int number_of_people;
+	int cur_age;
+	getline(namefile,line);
+	stringstream sstr;
+	sstr<<line;
+	sstr>>number_of_people;
+	while(getline(namefile,line))
+	{
+		stringstream sstr;
+		sstr<<line;
+		sstr>>cur_name;
+		sstr>>cur_age;
+		if(cur_age>max_age_num)
+		{
+			max_age_num=cur_age;
+			name_max_age=cur_name;
+		}
+	}
+	cout<<"list length is:"<<number_of_people<<endl;
+	cout<<name_max_age<<endl;
+	cout<<max_age_num<<endl;
+	
+	return 0;
+	}
