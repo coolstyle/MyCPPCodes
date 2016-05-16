@@ -1,0 +1,62 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <typename T,typename R>
+void print (T* arr, int size,R* arr2,int size2)
+{
+	for (int i=0;i<size;i++)
+		cout<<arr[i]<<endl;
+	for (int i=0;i<size2;i++)
+		cout<<ar2r[i]<<endl;
+}
+
+
+template <typename M>
+M max(M* arr,int size)
+{
+	M maximum=arr[0];
+	 for (int i=0;i<size;i++)
+	 {
+		if (arr[i]>maximum)
+			maximum=arr[i];
+	 }
+	 return maximum;
+}
+
+
+template <typename T>
+class rectangle
+{
+private :
+	T x1,x2,y1,y2;
+public:
+	rectangle(T a,T b,T c,T d)
+	{
+		x1=a;
+		x2=b;
+		y1=c;
+		y2=d;
+	}
+	T getarea()
+	{
+		return (x2-x1)*(y2-y1);
+	}
+};
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+
+	string str[5]={"zpple","banana","watermalon","cherry","blackberrys"};
+	cout<<"the max is:"<<max(str,5)<<endl;//it compares the first letter in alphabet
+
+	rectangle<int> R_I(2,6,7,8);
+	rectangle<double> R_D(1.2,3.6,2.3,1.36);
+	cout<<R_I.getarea()<<endl;
+	cout<<R_D.getarea()<<endl;
+		
+
+	return 0;
+}
