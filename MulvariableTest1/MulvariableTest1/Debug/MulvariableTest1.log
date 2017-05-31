@@ -1,0 +1,6 @@
+﻿  MulvariableTest1.cpp
+c:\users\yujie\documents\visual studio 2017\projects\mulvariabletest1\mulvariabletest1\mulvariabletest1.cpp(251): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: 参见“getch”的声明
+c:\users\yujie\documents\visual studio 2017\projects\mulvariabletest1\mulvariabletest1\mulvariabletest1.cpp(44): warning C4715: “polynomial::getPreNode”: 不是所有的控件路径都返回值
+  MulvariableTest1.vcxproj -> C:\Users\yujie\documents\visual studio 2017\Projects\MulvariableTest1\Debug\MulvariableTest1.exe
+  MulvariableTest1.vcxproj -> C:\Users\yujie\documents\visual studio 2017\Projects\MulvariableTest1\Debug\MulvariableTest1.pdb (Partial PDB)
