@@ -1,0 +1,4 @@
+﻿  WordFrequency.cpp
+c:\users\yujie\projects\c++projects\wordfrequency\wordfrequency\wordfrequency.cpp(122): warning C4101: “c”: 未引用的局部变量
+  WordFrequency.vcxproj -> C:\Users\yujie\Projects\C++Projects\WordFrequency\Debug\WordFrequency.exe
+  WordFrequency.vcxproj -> C:\Users\yujie\Projects\C++Projects\WordFrequency\Debug\WordFrequency.pdb (Partial PDB)
